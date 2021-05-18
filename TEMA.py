@@ -10,7 +10,8 @@ class TEMA:
         f.write(str(self.__nombre)+'\n')
         f.close()
 
-    def consultar_todo(self):
+    @classmethod
+    def consultar_todo(cls):
         f = open("c:\Programas\TEMA.txt")
         print(f.read())
         f.close()
