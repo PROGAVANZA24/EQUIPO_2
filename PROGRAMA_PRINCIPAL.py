@@ -60,6 +60,14 @@ while True:
             EMPLEADO.consultar_todo()
         if opc == 3:
             EMPLEADO.consultar_por_id()
+    elif des == 5:
+        if opc ==1:
+            a = input("Ingresa el ID_CURSOTEMA: ")
+            b = input("Ingresa el ID_CURSO: ")
+            c = input("Ingresa el ID_TEMA: ")
+            info = CURSO_TEMA(a,b,c)
+            info.guardar()
+
     x= int(input("¿Quieres seguir realizando acciones? (1 para seguir - *otro número* para salir): "))
     if x != 1:
         break
