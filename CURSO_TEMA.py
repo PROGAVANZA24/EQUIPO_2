@@ -11,4 +11,7 @@ class CURSO_TEMA:
         f.write(str(self.__id_tema)+ '\n')
         f.close()
 
-    
+    def consultar_todo(self):
+        f = open("c:\Programas\CURSO_TEMA.txt")
+        print(f.read())
+        f.close()
