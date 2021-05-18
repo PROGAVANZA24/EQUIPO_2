@@ -73,7 +73,13 @@ while True:
             CURSO_TEMA.consultar_todo()
         if opc == 3:
             CURSO_TEMA.consultar_por_id()
-
+    elif des == 6:
+        if opc ==1:
+            a = input("Ingresa el ID_CURSOTEMAVIDEO: ")
+            b = input("Ingresa el ID_CURSOTEMA: ")
+            c = input("Ingresa el ID_VIDEO: ")
+            info = CURSO_TEMA_VIDEO(a,b,c)
+            info.guardar()
     x= int(input("¿Quieres seguir realizando acciones? (1 para seguir - *otro número* para salir): "))
     if x != 1:
         break
