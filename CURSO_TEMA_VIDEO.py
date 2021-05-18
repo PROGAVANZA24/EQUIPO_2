@@ -5,3 +5,10 @@ class CURSO_TEMA_VIDEO:
         self.__id_CTV = id_CTV
         self.__id_CT = id_CT
         self.__id_video = id_video
+
+    def guardar(self):
+        f = open("c:\Programas\CURSO_TEMA_VIDEO.txt","a", encoding="utf8")
+        f.write(str(self.__id_CTV)+'|')
+        f.write(str(self.__id_CT)+'|')
+        f.write(str(self.__id_video)+ '\n')
+        f.close()
