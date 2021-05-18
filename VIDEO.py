@@ -22,8 +22,9 @@ class VIDEO:
             if info[0] == busqueda:
                 print(linea)
         f.close()
-        
-    def consultar_todo(self):
+    
+    @classmethod
+    def consultar_todo(cls):
         f = open("c:\Programas\VIDEO.txt")
         print(f.read())
         f.close()
