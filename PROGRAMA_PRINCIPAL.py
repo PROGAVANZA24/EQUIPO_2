@@ -35,6 +35,20 @@ while True:
         elif opc == 3:
             CURSO.consultar_por_id()
     
+    elif des == 3:
+        if opc == 1:
+            a = input("Escribe el id del video: ")
+            b = input("Escribe el nombre del video: ")
+            c = input("Escribe el url del video: ")
+            d = input("Escribe la fecha de publicación: ")
+            info = VIDEO(a,b,c,d)
+            info.guardar()
+        elif opc == 2:
+            print("ID_VIDEO | NOMBRE | URL | FECHA")
+            VIDEO.consultar_todo()
+        elif opc == 3:
+            VIDEO.consultar_por_id()
+
     x= int(input("¿Quieres seguir realizando acciones? (1 para seguir - *otro número* para salir): "))
     if x != 1:
         break
