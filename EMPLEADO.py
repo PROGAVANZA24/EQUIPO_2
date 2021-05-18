@@ -11,7 +11,8 @@ class EMPLEADO:
         f.write(str(self.__direccion)+ '\n')
         f.close()
 
-    def consultar_todo(self):
+    @classmethod
+    def consultar_todo(cls):
         f = open("c:\Programas\EMPLEADO.txt")
         print(f.read())
         f.close()
