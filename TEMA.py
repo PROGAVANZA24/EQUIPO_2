@@ -14,3 +14,12 @@ class TEMA:
         f = open("c:\Programas\TEMA.txt")
         print(f.read())
         f.close()
+
+    @classmethod
+    def consultar_por_id(cls):
+        busqueda = input("**Consulta datos por id** Inserte id a consultar:")
+        f = open("c:\Programas\TEMA.txt")
+        for linea in f:
+            info = linea.strip().split('|')
+            if info[0] == busqueda:
+                print(linea)
