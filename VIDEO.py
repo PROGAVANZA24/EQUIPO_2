@@ -12,3 +12,12 @@ class VIDEO:
         f.write(str(self.__url)+'|')
         f.write(str(self.__fecha_publicacion)+'\n')
         f.close()
+
+    @classmethod
+    def consultar_por_id(cls):
+        busqueda = input("**Consulta datos por id** Inserte id a consultar:")
+        f = open("c:\Programas\VIDEO.txt")
+        for linea in f:
+            info = linea.strip().split('|')
+            if info[0] == busqueda:
+                print(linea)
