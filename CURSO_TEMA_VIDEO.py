@@ -13,7 +13,8 @@ class CURSO_TEMA_VIDEO:
         f.write(str(self.__id_video)+ '\n')
         f.close()
 
-    def consultar_todo(self):
+    @classmethod
+    def consultar_todo(cls):
         f = open("c:\Programas\CURSO_TEMA_VIDEO.txt")
         print(f.read())
         f.close()
