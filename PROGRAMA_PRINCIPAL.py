@@ -68,6 +68,12 @@ while True:
             info = CURSO_TEMA(a,b,c)
             info.guardar()
 
+        if opc ==2:
+            print("ID_CURSOTEMA | ID_CURSO | ID_TEMA")
+            CURSO_TEMA.consultar_todo()
+        if opc == 3:
+            CURSO_TEMA.consultar_por_id()
+
     x= int(input("¿Quieres seguir realizando acciones? (1 para seguir - *otro número* para salir): "))
     if x != 1:
         break
