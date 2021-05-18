@@ -16,6 +16,11 @@ while True:
             b = input("Escribe el nombre del tema: ")
             info = TEMA(a,b)
             info.guardar()
+        if opc == 2:
+            print("ID_TEMA | NOMBRE")
+            TEMA.consultar_todo()
+        if opc == 3:
+            TEMA.consultar_por_id()
     x= int(input("¿Quieres seguir realizando acciones? (1 para seguir - *otro número* para salir): "))
     if x != 1:
         break
