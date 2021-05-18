@@ -55,7 +55,11 @@ while True:
             c = input("Escribe la dirección del empleado: ")
             info = EMPLEADO(a,b,c)
             info.guardar()
-
+        if opc == 2:
+            print("ID_EMPLEADO | NOMBRE | DIRECCIÓN")
+            EMPLEADO.consultar_todo()
+        if opc == 3:
+            EMPLEADO.consultar_por_id()
     x= int(input("¿Quieres seguir realizando acciones? (1 para seguir - *otro número* para salir): "))
     if x != 1:
         break
