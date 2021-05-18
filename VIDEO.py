@@ -4,3 +4,11 @@ class VIDEO:
         self.__nombre = nombre
         self.__url = url
         self.__fecha_publicacion = fecha_publicacion
+
+    def guardar(self):
+        f = open("c:\Programas\VIDEO.txt","a", encoding="utf8")
+        f.write(str(self.__id_video)+'|')
+        f.write(str(self.__nombre)+'|')
+        f.write(str(self.__url)+'|')
+        f.write(str(self.__fecha_publicacion)+'\n')
+        f.close()
