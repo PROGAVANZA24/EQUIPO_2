@@ -28,8 +28,13 @@ while True:
             c = input("Escribe el id del empleado que lo imparte: ")
             info = CURSO(a,b,c)
             info.guardar()
-
-
+        
+        elif opc == 2:
+            print("ID_CURSO | DESCRIPCION | ID_EMPLEADO")
+            CURSO.consultar_todo()
+        elif opc == 3:
+            CURSO.consultar_por_id()
+    
     x= int(input("¿Quieres seguir realizando acciones? (1 para seguir - *otro número* para salir): "))
     if x != 1:
         break
