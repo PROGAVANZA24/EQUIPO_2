@@ -9,3 +9,8 @@ class TEMA:
         f.write(str(self.__id_tema)+'|')
         f.write(str(self.__nombre)+'\n')
         f.close()
+
+    def consultar_todo(self):
+        f = open("c:\Programas\TEMA.txt")
+        print(f.read())
+        f.close()
