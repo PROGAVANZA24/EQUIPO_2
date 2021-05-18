@@ -21,3 +21,8 @@ class VIDEO:
             info = linea.strip().split('|')
             if info[0] == busqueda:
                 print(linea)
+                
+    def consultar_todo(self):
+        f = open("c:\Programas\VIDEO.txt")
+        print(f.read())
+        f.close()
