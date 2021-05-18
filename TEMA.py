@@ -23,3 +23,4 @@ class TEMA:
             info = linea.strip().split('|')
             if info[0] == busqueda:
                 print(linea)
+        f.close()
