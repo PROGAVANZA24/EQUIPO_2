@@ -10,3 +10,8 @@ class EMPLEADO:
         f.write(str(self.__nombre)+'|')
         f.write(str(self.__direccion)+ '\n')
         f.close()
+
+    def consultar_todo(self):
+        f = open("c:\Programas\EMPLEADO.txt")
+        print(f.read())
+        f.close()
