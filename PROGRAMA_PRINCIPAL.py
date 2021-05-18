@@ -48,6 +48,13 @@ while True:
             VIDEO.consultar_todo()
         elif opc == 3:
             VIDEO.consultar_por_id()
+    elif des == 4:
+        if opc == 1:
+            a = input("Escribe el id del empleado: ")
+            b = input("Escribe el nombre del empleado: ")
+            c = input("Escribe la dirección del empleado: ")
+            info = EMPLEADO(a,b,c)
+            info.guardar()
 
     x= int(input("¿Quieres seguir realizando acciones? (1 para seguir - *otro número* para salir): "))
     if x != 1:
